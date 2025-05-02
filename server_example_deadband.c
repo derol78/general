@@ -13,7 +13,7 @@ extern IedModel iedModel;
 static int running = 0;
 static IedServer iedServer = NULL;
 static int sleepTime = 1000;   // Default sleep time in ms
-static int nrOffSignals = 10;  // Default number of signals
+static int nrOffSignals = 1;  // Default number of signals
 
 void sigint_handler(int signalId) {
     running = 0;
@@ -111,17 +111,60 @@ int main(int argc, char** argv) {
         IedServer_lockDataModel(iedServer);
 
         // Update all signals dynamically based on nrOffSignals
-        for (int i = 1; i <= nrOffSignals; i++) {
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn[i]_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn[i]_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn[i]_t, &iecTimestamp);
-            if(i==10){
-                break;
-            }
+
+        if(nrOffSignals >= 1){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 2){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 3){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 4){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 5){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 6){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 7){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 8){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 9){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+        }
+        if(nrOffSignals >= 10){
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
         }
 
-        IedServer_unlockDataModel(iedServer);
 
+        IedServer_unlockDataModel(iedServer);
         Thread_sleep(sleepTime);
     }
 
