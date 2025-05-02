@@ -118,49 +118,49 @@ int main(int argc, char** argv) {
             IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
         }
         if(nrOffSignals >= 2){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn2_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn2_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn2_t, &iecTimestamp);
         }
         if(nrOffSignals >= 3){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn3_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn3_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn3_t, &iecTimestamp);
         }
         if(nrOffSignals >= 4){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn4_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn4_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn4_t, &iecTimestamp);
         }
         if(nrOffSignals >= 5){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn5_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn5_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn5_t, &iecTimestamp);
         }
         if(nrOffSignals >= 6){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn6_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn6_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn6_t, &iecTimestamp);
         }
         if(nrOffSignals >= 7){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn7_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn7_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn7_t, &iecTimestamp);
         }
         if(nrOffSignals >= 8){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn8_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn8_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn8_t, &iecTimestamp);
         }
         if(nrOffSignals >= 9){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn9_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn9_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn9_t, &iecTimestamp);
         }
         if(nrOffSignals >= 10){
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_mag_f, acc);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_instMag_f, acc);
-            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn1_t, &iecTimestamp);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn10_mag_f, acc);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn10_instMag_f, acc);
+            IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn10_t, &iecTimestamp);
         }
 
 
