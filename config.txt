@@ -1,0 +1,4 @@
+# the time between reports in millis
+sleepTime 2000
+# Number of signals that will be set with new data and reported. min 1, max 10.
+nrOffSignals 10
