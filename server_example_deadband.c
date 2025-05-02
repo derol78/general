@@ -1,4 +1,4 @@
-#include "iec61850_server.h"
+ #include "iec61850_server.h"
 #include "hal_thread.h"
 #include <signal.h>
 #include <stdlib.h>
@@ -95,9 +95,12 @@ int main(int argc, char** argv) {
     running = 1;
     signal(SIGINT, sigint_handler);
 
-    float acc = -1;
+    float acc = 0;
     while (running) {
         uint64_t timestamp = Hal_getTimeInMs();
+        if(acc==10){
+            acc=0;
+        }
         acc += 1;
 
         Timestamp iecTimestamp;
@@ -112,6 +115,9 @@ int main(int argc, char** argv) {
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn[i]_mag_f, acc);
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn[i]_instMag_f, acc);
             IedServer_updateTimestampAttributeValue(iedServer, IEDMODEL_LD1_AnInGGIO1_AnIn[i]_t, &iecTimestamp);
+            if(i==10){
+                break;
+            }
         }
 
         IedServer_unlockDataModel(iedServer);
